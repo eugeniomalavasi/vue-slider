@@ -31,6 +31,7 @@ createApp({
                 },
             ],
             activeIndex: 0,
+            imgFlag: false,
         }
     },
     methods: {
@@ -47,6 +48,11 @@ createApp({
             } else {
                 this.activeIndex--;
             }
-        }
+        },
+        // imgActive: function () {
+        //     if() {
+
+        //     }
+        // }
     }
 }).mount('#app')
