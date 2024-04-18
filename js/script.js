@@ -33,6 +33,9 @@ createApp({
             activeIndex: 0
         }
     },
+    created() {
+        autoPlay: setInterval(this.nextImg, 1000)
+    },
     methods: {
         nextImg: function () {
             if(this.activeIndex < this.images.length - 1) {
@@ -49,9 +52,4 @@ createApp({
             }
         }
     },
-    // created: {
-    //     setInterval() => {
-            
-    //     }
-    // }
 }).mount('#app')
