@@ -40,7 +40,13 @@ createApp({
             } else {
                 this.activeIndex = 0;
             }
-            
+        },
+        prevImg: function () {
+            if (this.activeIndex === 0) {
+                this.activeIndex = this.images.length - 1;
+            } else {
+                this.activeIndex--;
+            }
         }
-    },
+    }
 }).mount('#app')
