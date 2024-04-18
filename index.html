@@ -72,7 +72,7 @@
                   src="./img/02.webp"
                   alt="Thumbnail of Ratchet & Clank: Rift Apart picture"
                 /> -->
-                <img class="img-fluid my-thumbnail" v-for="(thumb, index) in images" :src="images[index].image" alt="">
+                <img class="img-fluid my-thumbnail" v-for="(thumb, index) in images" :src="images[index].image" :class="{'active' : index === activeIndex}" alt="">
                 <!-- etc ... -->
               </div>
             </div>
