@@ -48,5 +48,10 @@ createApp({
                 this.activeIndex--;
             }
         }
-    }
+    },
+    // created: {
+    //     setInterval() => {
+            
+    //     }
+    // }
 }).mount('#app')
