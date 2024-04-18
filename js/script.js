@@ -34,12 +34,13 @@ createApp({
         }
     },
     methods: {
-        nextImg: function (index) {
-            if(this.activeIndex === images.length - 1) {
-                this.activeIndex = 0;
-            } else {
+        nextImg: function () {
+            if(this.activeIndex < this.images.length - 1) {
                 this.activeIndex++;
+            } else {
+                this.activeIndex = 0;
             }
+            
         }
-    }
+    },
 }).mount('#app')
